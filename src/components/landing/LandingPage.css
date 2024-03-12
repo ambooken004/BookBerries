@@ -1,0 +1,42 @@
+.landingpage_main_container
+{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    margin-top: -21px;
+    height: 105vh;
+    align-items: center;
+}
+.startlearn-btns-container
+{
+    width: 30vw;
+    height: 10vh;
+    border: 0px;
+    margin-top: 50px;
+    margin-left: 480px;
+    padding: 10px;
+    display: flex;
+    gap: 45px;
+}
+
+.get-started-btn
+{
+    color: white;
+    padding: 20px;
+    background-color: purple;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.learn-more-btn
+{
+    color: whitesmoke;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+}
+
+

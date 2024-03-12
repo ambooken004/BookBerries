@@ -1,0 +1,9 @@
+.homepage-container
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://rocketexpansion.com/wp-content/uploads/2022/02/perfect-website-for-a-book-v2.jpg");
+  filter: brightness();
+}

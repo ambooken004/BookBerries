@@ -1,0 +1,65 @@
+
+.navbar {
+    background-color: rgb(12, 12, 12);
+    padding: 10px 20px;
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-link-items
+  {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  .navbar-link-items:hover {
+    color: rgb(155, 27, 155);
+    text-decoration: none;
+  }
+  
+  .login-btn
+  {
+    color: white;
+    padding: 10px;
+    background-color: purple;
+    border-radius: 150px;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  
+
+  .signup-btn
+  {
+    border-radius: 150px;
+    cursor: pointer;
+    color: purple;
+    background-color: black;
+    border: 2px solid purple;
+    padding: 10px;
+
+  }
+
+  .signup-btn:hover
+  {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: purple;
+    text-decoration: none;
+    border-radius: 150px;
+  }
+
