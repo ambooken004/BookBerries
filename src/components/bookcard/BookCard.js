@@ -5,11 +5,11 @@ const BookCard = ({ book }) => {
   return (
     <div className="book-card">
       <div className="book-details">
-        <h2>{book.name}</h2>
-        <img src={book.image} alt='Harry Potter' className='img'></img>
-        <p>Author: {book.author}</p>
-        <p>Price: {book.price}</p>
-        <p>Review: {book.review}</p>
+        <h2>{book.bookname}</h2>
+        <img src={book.bookimage} alt='Harry Potter' className='img'></img>
+        <p>Author: {book.bookauthor}</p>
+        <p>Price: {book.bookprice}</p>
+        <p>Review:Not Review</p>
       </div>
       <div className="book-buttons">
         <button className="review-button"><a href='/review' className='review-btn'>Review</a></button>
