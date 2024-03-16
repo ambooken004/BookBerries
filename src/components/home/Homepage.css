@@ -1,9 +1,39 @@
-.homepage-container
-{
-  display:flex;
+.home-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.book-cards {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-image: url("https://rocketexpansion.com/wp-content/uploads/2022/02/perfect-website-for-a-book-v2.jpg");
-  filter: brightness();
+}
+
+.book-card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  border-radius: 5px;
+  height: 300px;
+}
+
+.book-card h3 {
+  margin-top: 10px;
+}
+
+.book-card p {
+  margin-top: 10px;
+  font-size: 0.9em;
 }

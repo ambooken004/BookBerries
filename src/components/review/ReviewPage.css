@@ -1,0 +1,37 @@
+.book-review-page {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  .review-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .review-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review.positive {
+    border-color: green;
+  }
+  
+  .review.negative {
+    border-color: red;
+  }
+  
+  .sentiment {
+    font-style: italic;
+  }

@@ -1,0 +1,74 @@
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-us-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .about-img
+  {
+    width: 1000px;
+    height: 1000px;
+    background-image: url("https://storage.needpix.com/rsynced_images/read-2841722_1280.jpg");
+  }
+  .aboutus-main-con
+  {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .aboutus-access-btns button
+  {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: purple; /* Blue color */
+        color: #fff; /* Text color */
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+        border-radius: 50px;
+        overflow: hidden
+
+  }
+
+  .aboutus-access-btns::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white; /* Transition color */
+    transition: left 0.5s linear; /* Duration of transition */
+    z-index: -1;
+  }
+
+  .aboutus-access-btns button:hover {
+    background-color: white; /* Darker blue color */
+    color: black;
+    border-radius: 50px;
+}
+
+.aboutus-access-btns:hover::before {
+  left: 0;
+  text-decoration: white;
+  background-color: black;
+}

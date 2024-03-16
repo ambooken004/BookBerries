@@ -43,6 +43,7 @@
     background-color: #0056b3;
   } */
 
+  /*
   .login-form-container{
     display:flex;
     justify-content: center;
@@ -104,3 +105,75 @@
   .login-form p{
     font-size: small;
   }
+  */
+
+  .signup-container {
+    background-image: url("https://img.freepik.com/free-photo/books-assortment-with-dark-background_23-2148898297.jpg");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.signup-content {
+    width: 500px;
+    margin: 30px;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.282);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-content h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width:400px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.signup-container button {
+    width: 400px;
+    padding: 8px;
+    background-color: purple;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.signup-image {
+    flex: 1;
+    height: 100%;
+    
+}
