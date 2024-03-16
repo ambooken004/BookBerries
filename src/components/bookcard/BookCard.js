@@ -9,7 +9,7 @@ const BookCard = ({ book }) => {
         <img src={book.bookimage} alt='Harry Potter' className='img'></img>
         <p>Author: {book.bookauthor}</p>
         <p>Price: {book.bookprice}</p>
-        <p>Review:Not Review</p>
+        <p>Review:Not is Review</p>
       </div>
       <div className="book-buttons">
         <button className="review-button"><a href='/review' className='review-btn'>Review</a></button>
