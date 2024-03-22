@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ReviewPage.css';
 import axios from 'axios';
-import { useLocation, useSearchParams } from 'react-router-dom';
 
 const imogy = {
   5: "https://cdn-icons-png.flaticon.com/128/3129/3129283.png",
@@ -13,7 +12,7 @@ const imogy = {
 const ReviewPage = () => {
   const [data, setData] = useState({ bookreview: '', bookid: '' });
   const [reviewdata, setReviewdata] = useState([]);
-  const serchparms=useSearchParams()
+  const [bookid,setBookid]=useState()
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const bookid = urlParams.get('hostelid');
@@ -21,6 +20,7 @@ const ReviewPage = () => {
   }, [data]);
 
   const fetchdata = async (bookid) => {
+      setBookid(bookid)
       axios.post("http://localhost:3001/fetchreview", { data: bookid })
         .then((response) => {
           if (response.data.success) {
@@ -37,8 +37,6 @@ const ReviewPage = () => {
   };
 
   const uploadData = async () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const bookid = urlParams.get('hostelid');
       setData({ ...data, bookid: bookid });
       console.log(data);
       axios.post("http://localhost:3001/findscore", { data: data })
