@@ -1,0 +1,29 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .book-list {
+    margin-top: 20px;
+  }
+  
+  .book-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .book-list li {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+  
+  .book-list li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }

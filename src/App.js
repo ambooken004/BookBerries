@@ -10,6 +10,8 @@ import AboutUsPage from './components/aboutus/AboutUsPage.jsx';
 import BooksPage from './components/books/BooksPage.jsx';
 import ReviewPage from './components/review/ReviewPage.jsx';
 
+import AdminPage from './components/admin/AdminPage.jsx';
+
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +23,8 @@ function App() {
       <Route path='/about' element={<AboutUsPage />}></Route>
       <Route path='/books' element={<BooksPage />}></Route>
       <Route path='/review' element={<ReviewPage />}></Route>
+
+      <Route path='/admin' element={<AdminPage />}></Route>
     </Routes>
     </BrowserRouter>
   );
