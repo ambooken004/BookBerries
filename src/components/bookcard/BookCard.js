@@ -1,7 +1,9 @@
 import React from 'react';
 import './BookCard.css';
+import { useNavigate } from 'react-router-dom';
 
 const BookCard = ({ book }) => {
+  const history=useNavigate()
   return (
     <div className="book-card">
       <div className="book-details">
@@ -12,7 +14,7 @@ const BookCard = ({ book }) => {
         <p>Review:Not is Review</p>
       </div>
       <div className="book-buttons">
-        <button className="review-button"><a href='/review' className='review-btn'>Review</a></button>
+        <button className="review-button" onClick={()=>history(`/review?hostelid=${book._id}`)}>Review Button</button>
         <button className="price-button">Buy</button>
       </div>
     </div>

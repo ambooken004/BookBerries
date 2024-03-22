@@ -16,6 +16,7 @@
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    margin-bottom: 50px;
   }
   
   .review {
@@ -34,4 +35,26 @@
   
   .sentiment {
     font-style: italic;
+  }
+
+  /* Styles By Ferno */
+
+  .rdiv{
+    width: 560px;
+    height: 50px;
+    border:solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .rdiv img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .reviews{
+    height: 200px;
   }
