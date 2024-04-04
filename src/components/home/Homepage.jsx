@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../navbar/Navbar';
+import ModifiedNavbar from '../modified_navbar/ModifiedNavbar';
 import './Homepage.css';
 import Footer from '../footer/Footer';
 
@@ -8,41 +8,41 @@ import Footer from '../footer/Footer';
 const Homepage = () => {
   return (
     <div>
-      <Navbar />
+      <ModifiedNavbar />
       <div className="home-page">
       <h1>Welcome to BookBerries</h1>
       <div className="book-cards">
         {/* Card 1 */}
         <div className="book-card">
-          <img src="https://skyryedesign.com/wp-content/uploads/2016/04/56c6f9b7efad5-cover-books-design-illustrations.jpg" alt="Book 1" />
-          <h3>Book Title 1</h3>
-          <p>Description of Book 1</p>
+          <img src="https://m.media-amazon.com/images/I/41LusXcRdDL._SY445_SX342_.jpg" alt="The Power Of Your Subconscious Mind" />
+          <h3>The Power Of Your Subconscious Mind</h3>
+          <p>By: Joseph Murphy</p>
         </div>
         {/* Card 2 */}
         <div className="book-card">
-          <img src="https://i.pinimg.com/564x/f7/c8/12/f7c812c9b0296cd9f119e33a06d9a256.jpg" alt="Book 2" className='home-card-img'/>
-          <h3>Book Title 2</h3>
-          <p>Description of Book 2</p>
+          <img src="https://m.media-amazon.com/images/I/61AxAkExf-L._AC_UF1000,1000_QL80_.jpg" alt="Decode And Conquer" className='home-card-img'/>
+          <h3>Decode And Conquer</h3>
+          <p>By: Lewis C.Lin</p>
         </div>
         <div className="book-card">
-          <img src="https://marketplace.canva.com/EAFaQMYuZbo/1/0/1003w/canva-brown-rusty-mystery-novel-book-cover-hG1QhA7BiBU.jpg" alt="Book 2" />
-          <h3>Book Title 2</h3>
-          <p>Description of Book 2</p>
+          <img src="https://m.media-amazon.com/images/I/71N072YNs6L._AC_UF1000,1000_QL80_.jpg" alt="Book 2" />
+          <h3>The World's Greatest Blackjack Book</h3>
+          <p>By: Lance Humble</p>
         </div>
         <div className="book-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7ekxu3OzvIQLn2K9bnYPHvNlHiVnR216eg&usqp=CAU" alt="Book 2" />
-          <h3>Book Title 2</h3>
-          <p>Description of Book 2</p>
+          <img src="https://m.media-amazon.com/images/I/61JEULiI-BL._AC_UF1000,1000_QL80_.jpg" alt="Book 2" />
+          <h3>100 Baggers</h3>
+          <p>By: Christopher Mayer</p>
         </div>
         <div className="book-card">
-          <img src="https://s26162.pcdn.co/wp-content/uploads/2020/01/Sin-Eater-by-Megan-Campisi.jpg" alt="Book 2" />
-          <h3>Book Title 2</h3>
-          <p>Description of Book 2</p>
+          <img src="https://m.media-amazon.com/images/I/71KAT-uHm9L._AC_UF1000,1000_QL80_.jpg" alt="Book 2" />
+          <h3>Why Buddhism Is True</h3>
+          <p>By: Robert Wright</p>
         </div>
         <div className="book-card">
-          <img src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_360,c_scale/jackets/9781635570304.jpg" alt="Book 2" />
-          <h3>Book Title 2</h3>
-          <p>Description of Book 2</p>
+          <img src="https://m.media-amazon.com/images/I/51sdCuqMwWL._AC_UF1000,1000_QL80_.jpg" alt="Book 2" />
+          <h3>Don't Make Me Think</h3>
+          <p>By: Steve Krug</p>
         </div>
         {/* Add more cards as needed */}
       </div>

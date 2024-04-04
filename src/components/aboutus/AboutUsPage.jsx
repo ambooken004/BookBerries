@@ -1,12 +1,12 @@
 import React from 'react';
 import './AboutUsPage.css'; 
-import Navbar from '../navbar/Navbar';
+import ModifiedNavbar from '../modified_navbar/ModifiedNavbar';
 import Footer from '../footer/Footer';
 
 function AboutUsPage() {
   return (
     <div>
-        <Navbar />
+        <ModifiedNavbar />
         <div className='aboutus-main-con'>
         <div className="about-us-container">
             <h1>About Us</h1>

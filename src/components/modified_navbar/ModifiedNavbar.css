@@ -1,0 +1,34 @@
+.modify-navbar {
+    background-color: rgb(12, 12, 12);
+    padding: 10px 20px;
+  }
+  
+  .modify-navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .modify-navbar-item {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .modify-navbar-link-items
+  {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  .modify-navbar-link-items:hover {
+    color: rgb(155, 27, 155);
+    text-decoration: none;
+  }
+  
+  

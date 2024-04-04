@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Navbar from '../navbar/Navbar';
+import ModifiedNavbar from '../modified_navbar/ModifiedNavbar';
 import BookCard from '../bookcard/BookCard';
 import './BooksPage.css';
 import Footer from '../footer/Footer';
@@ -27,7 +27,7 @@ const BooksPage = () => {
   }
   return (
     <div>
-        <Navbar />
+        <ModifiedNavbar />
         <div className="book-container">
       {bookdata && bookdata.map(book => (
         <BookCard key={book._id} book={book} />

@@ -31,15 +31,15 @@ const LandingPage = () => {
         <h2>Featured Books</h2>
         <div className="book-container">
           <div className="book">
-            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYo3aNodvND-RA0VJ3ewYvIZYhGGJpcpsGAg&usqp=CAU' alt="" />
+            <img src="https://m.media-amazon.com/images/I/618XGVFYlwL._SY466_.jpg" alt="How to win friends and influence people" />
           
           </div>
           <div className="book">
-            <img src="https://storage.googleapis.com/du-prd/books/images/9780393254600.jpg" alt="" />
+            <img src="https://m.media-amazon.com/images/I/51DlnjccG-L._SY445_SX342_.jpg" alt="Hooked" />
           
           </div>
           <div className="book">
-            <img src="https://celadonbooks.com/wp-content/uploads/2019/07/the-silent-patient-us.jpg" alt="" />
+            <img src="https://m.media-amazon.com/images/I/61b5aPmEhzL._SY466_.jpg" alt="Think and grow rich" />
         
           </div>
         </div>
