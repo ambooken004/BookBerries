@@ -1,11 +1,16 @@
 import React from 'react';
 import './AdminPage.css';
-import Dashboard from '../dashboard/Dashboard';
+import Header from './Header'
+import Home from './Home'
+import Sidebar from './Sidebar'
+
 
 const AdminPage = () => {
   return (
-    <div>
-      <Dashboard />
+    <div className = 'grid-container'>
+      <Header />
+      <Sidebar />
+      <Home />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
-import { books } from '../data/data';
+import { books } from '../../data/data';
 
 const Dashboard = () => {
   return (
