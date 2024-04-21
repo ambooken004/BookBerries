@@ -9,8 +9,8 @@ import LandingPage from './components/landing/LandingPage.jsx';
 import AboutUsPage from './components/aboutus/AboutUsPage.jsx';
 import BooksPage from './components/books/BooksPage.jsx';
 import ReviewPage from './components/review/ReviewPage.jsx';
-
-import AdminPage from './components/admin/AdminPage.jsx';
+import BookzPage from './components/admin/Pages/Bookzpage.jsx';
+import AdminPage from './components/admin/Pages/AdminPage.jsx';
 
 function App() {
   return (
@@ -23,8 +23,9 @@ function App() {
       <Route path='/about' element={<AboutUsPage />}></Route>
       <Route path='/books' element={<BooksPage />}></Route>
       <Route path='/review' element={<ReviewPage />}></Route>
-
+      <Route path='/admin/books' element={<BookzPage />}></Route>
       <Route path='/admin' element={<AdminPage />}></Route>
+      
     </Routes>
     </BrowserRouter>
   );
