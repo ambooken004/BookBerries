@@ -3,8 +3,9 @@ import {BsFillBellFill  , BsFillArchiveFill , BsFillGrid3X2GapFill,
      BsPeopleFill } from 'react-icons/bs'
 import {  LineChart, Line, BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip,
      Legend, ResponsiveContainer } from 'recharts';
-
+import {useNavigate} from 'react-router-dom'
 function Home() {
+    const navigate = useNavigate()
     
     const data = [
         {
@@ -61,13 +62,13 @@ function Home() {
       </div>
       
       <div className='main-cards'>
-        <div className='card'>
+        <button  onClick ={()=>navigate("/admin/books")} className='card'>
             <div className='card-inner'>
                 <h3>Books</h3>
                 <BsFillArchiveFill className= 'card_icon'/>
             </div>
             <h1>300</h1>
-        </div> 
+        </button> 
         
         <div className='card'>
             <div className='card-inner'>
