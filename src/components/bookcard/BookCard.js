@@ -3,6 +3,14 @@ import './BookCard.css';
 import { useNavigate } from 'react-router-dom';
 
 const BookCard = ({ book }) => {
+
+  const checkloggined=(bookid)=>{
+    const user=localStorage.getItem("user")
+    if(user)
+    history(`/review?hostelid=${bookid}`)
+    else
+    alert("You Must Login First")
+  }
   const history=useNavigate()
   return (
     <div className="book-card">
@@ -14,7 +22,7 @@ const BookCard = ({ book }) => {
         <p>Review:Not is Review</p>
       </div>
       <div className="book-buttons">
-        <button className="review-button" onClick={()=>history(`/review?hostelid=${book._id}`)}>Review Button</button>
+        <button className="review-button" onClick={()=>checkloggined(book._id)}>Review Button</button>
         <button className="price-button">Buy</button>
       </div>
     </div>
