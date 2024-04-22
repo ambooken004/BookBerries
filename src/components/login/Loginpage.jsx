@@ -1,50 +1,53 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Loginpage.css'; // External CSS file
+import axios from 'axios';
 
 const Loginpage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const route=useNavigate()
+ const [data,setData]=useState()
+ const history=useNavigate()
 
-  const handleUsernameChange = (event) => {
-    setUsername(event.target.value);
-  };
+ const handle=(e)=>{
+  setData({...data,[e.target.name]:e.target.value})
+ }
 
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // You can add your login logic here, like calling an API to authenticate the user
-    console.log('Username:', username);
-    console.log('Password:', password);
-  };
+ const senddatatobackend=()=>{
+ axios.post("http://localhost:3001/login",{data:data}).then((response)=>{
+  if(response.data.success)
+  {
+    alert("Loggined Successfully")
+    history("/")
+    console.log(response.data.data)
+    localStorage.setItem("user",response.data.data._id)
+  }
+  else
+  alert(response.data.data)
+ })
+ }
 
   return (
+    <div className='loginwrap'>
     <div className="login-form-container">
-      <form onSubmit={handleSubmit} className="login-form">
         <h3>Login Page</h3>
         <input
           type="text"
           id="username"
-          value={username}
-          onChange={handleUsernameChange}
+          name='useremail'
           className="input-field"
           placeholder='Type Username here'
+          onChange={handle}
         />
         <input
           type="password"
           id="password"
-          value={password}
-          onChange={handlePasswordChange}
+          name='userpassword'
           className="input-field"
           placeholder='Type password here'
+          onChange={handle}
         />
-        <button onClick={()=>route("/home")}type="submit" className="submit-button">Login</button>
-        <p onClick={()=>route("/signup")}>New user Register now</p>
-      </form>
+        <button onClick={senddatatobackend} type="submit" className="submit-button">Login</button>
+        <p onClick={()=>history("/signup")}>New user Register now</p>
+    </div>
     </div>
   );
 };

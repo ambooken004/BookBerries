@@ -9,7 +9,7 @@ const ModifiedNavbar = () => {
             <li className="modify-navbar-item"><a href="/home" className="modify-navbar-link-items">Home</a></li>
             <li className="modify-navbar-item"><a href="/about" className="modify-navbar-link-items">About</a></li>
             <li className="modify-navbar-item"><a href="/books" className="modify-navbar-link-items">Books</a></li>
-            <li className='modify-navbar-item'><a href="/" className="modify-navbar-link-items">Log Out</a></li>
+            <li className='modify-navbar-item'><a href="/" className="modify-navbar-link-items" onClick={()=>localStorage.clear()}>Log Out</a></li>
         </ul>
     </nav>
   )

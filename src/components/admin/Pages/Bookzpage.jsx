@@ -1,31 +1,36 @@
-/*->created bookzpage for admin books
-->created routes from admin home to bookzpage*/
 
 
 
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 import styles from './Bookzpage.css';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const BookzPage = () => {
-  // Dummy data for books
-  const books = [
-    { id: 1, title: 'Book 1', author: 'Author 1', price: '$10' },
-    { id: 2, title: 'Book 2', author: 'Author 2', price: '$15' },
-    { id: 3, title: 'Book 3', author: 'Author 3', price: '$20' },
-  ];
+  const[bookdata,setBookdata]=useState()
+  const history=useNavigate()
+
+  useEffect(()=>{
+    axios.get("http://localhost:3001/viewallbook").then((responce)=>{
+      if(responce.data.success)
+      setBookdata(responce.data.data)
+    })
+  })
 
   return (
     <div className={styles.booksPage}>
       <h1>Books</h1>
-      <div className={styles.booksContainer}>
-        {books.map(book => (
-          <div key={book.id} className={styles.bookCard}>
-            <h2>{book.title}</h2>
-            <p>Author: {book.author}</p>
-            <p>Price: {book.price}</p>
-            <button className={styles.buyButton}>Buy Now</button>
-          </div>
-        ))}
+      <div className="booksContainer">
+        {bookdata && bookdata.map((item,key)=>{
+          return(
+            <div className="booksdivadmin" key={key} onClick={()=>history(`/adminreview/${item._id}`)}>
+          <img src={item.bookimage} alt="" />
+          <h2>{item.bookname}</h2>
+        </div>
+          )
+        })}
+        
       </div>
     </div>
   );
