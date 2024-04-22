@@ -11,6 +11,7 @@ import BooksPage from './components/books/BooksPage.jsx';
 import ReviewPage from './components/review/ReviewPage.jsx';
 import BookzPage from './components/admin/Pages/Bookzpage.jsx';
 import AdminPage from './components/admin/Pages/AdminPage.jsx';
+import AdminReview from './components/admin/adminReview/AdminReview.jsx';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path='/review' element={<ReviewPage />}></Route>
       <Route path='/admin/books' element={<BookzPage />}></Route>
       <Route path='/admin' element={<AdminPage />}></Route>
+      <Route path="/adminreview/:id" element={<AdminReview />}></Route>
       
     </Routes>
     </BrowserRouter>

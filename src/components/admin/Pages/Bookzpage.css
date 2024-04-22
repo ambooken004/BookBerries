@@ -7,6 +7,8 @@
   .booksContainer {
     display: flex;
     flex-wrap: wrap;
+    gap:10px;
+    width: 100%;
   }
   
   .bookCard {
@@ -34,4 +36,24 @@
   .buyButton:hover {
     background-color: purple;
   }
+
+  .booksdivadmin{
+    width:400px;
+    height: 400px;
+    background: rgb(157, 243, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color:black;
+    flex-direction: column;
+  }
+
+  .booksdivadmin img{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+
   

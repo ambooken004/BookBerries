@@ -10,14 +10,15 @@ const imogy = {
 }
 
 const ReviewPage = () => {
-  const [data, setData] = useState({ bookreview: '', bookid: '' });
+  const [data, setData] = useState();
   const [reviewdata, setReviewdata] = useState([]);
   const [bookid,setBookid]=useState()
+  const [trigger,setTrigger]=useState()
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const bookid = urlParams.get('hostelid');
     fetchdata(bookid);
-  }, [data]);
+  }, [trigger]);
 
   const fetchdata = async (bookid) => {
       setBookid(bookid)
@@ -33,16 +34,17 @@ const ReviewPage = () => {
   };
 
   const addReviewtoBackend = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
+    setData(e.target.value);
   };
 
   const uploadData = async () => {
-      setData({ ...data, bookid: bookid });
-      console.log(data);
-      axios.post("http://localhost:3001/findscore", { data: data })
+      const userid=localStorage.getItem("user")
+      axios.post("http://localhost:3001/findscore", { data: {bookreview:data,userid:userid,bookid:bookid} })
         .then((response) => {
+          console.log(response)
           if (response.data.success) {
             alert("Review uploaded");
+            setTrigger(response.data.data)
           }
         })
         .catch((error) => {
