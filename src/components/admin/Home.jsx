@@ -65,37 +65,43 @@ function Home() {
         <button  onClick ={()=>navigate("/admin/books")} className='card'>
             <div className='card-inner'>
                 <h3>Books</h3>
-                <BsFillArchiveFill className= 'card_icon'/>
             </div>
-            <h1>300</h1>
+            {/* <h1>300</h1> */}
+        </button>
+
+        <button  onClick ={()=>navigate("/admin/useraccounts")} className='card'>
+            <div className='card-inner'>
+                <h3>User Accounts</h3>
+            </div>
+            {/* <h1>300</h1> */}
         </button> 
         
-        <div className='card'>
+        {/* <div className='card'>
             <div className='card-inner'>
-                <h3>categories</h3>
+                <h3>User Accounts</h3>
                 <BsFillGrid3X2GapFill className= 'card_icon'/>
             </div>
             <h1>12</h1>
-        </div> 
+        </div> */} 
         
-        <div className='card'>
+        {/* <div className='card'>
             <div className='card-inner'>
                 <h3>customers</h3>
                 <BsPeopleFill className= 'card_icon'/>
             </div>
             <h1>33</h1>
-        </div>   
+        </div> */}   
         
-        <div className='card'>
+        {/* <div className='card'>
             <div className='card-inner'>
                 <h3>alerts</h3>
                 <BsFillBellFill className= 'card_icon'/>
             </div>
             <h1>42</h1>
-        </div> 
+        </div> */} 
             
       </div>
-      <div className='charts'>
+      {/* <div className='charts'>
         <ResponsiveContainer width="100%" height="100%">
             <BarChart
             width={500}
@@ -139,7 +145,7 @@ function Home() {
                 <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
                 </LineChart>
             </ResponsiveContainer>
-      </div>
+      </div> */}
     </main>
   )
 }

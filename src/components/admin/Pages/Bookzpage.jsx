@@ -27,6 +27,7 @@ const BookzPage = () => {
             <div className="booksdivadmin" key={key} onClick={()=>history(`/adminreview/${item._id}`)}>
           <img src={item.bookimage} alt="" />
           <h2>{item.bookname}</h2>
+          <button className='admin-book-delete-btn'>Delete</button>
         </div>
           )
         })}

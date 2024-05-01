@@ -10,7 +10,7 @@ const Homepage = () => {
     <div>
       <ModifiedNavbar />
       <div className="home-page">
-      <h1>Welcome to BookBerries</h1>
+      <h1 className=''>Welcome to BookBerries</h1>
       <div className="book-cards">
         {/* Card 1 */}
         <div className="book-card">
