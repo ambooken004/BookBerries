@@ -1,21 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './UserAccounts.css';
+import axios from 'axios';
 import UserTableList from '../../user_table_list/UserTableList';
 
 const UserAccounts = () => {
 
-  const users = [
-    { id: 1, username: 'user1', email: 'user1@example.com' },
-    { id: 2, username: 'user2', email: 'user2@example.com' },
-    { id: 3, username: 'user3', email: 'user3@example.com' },
-    { id: 4, username: 'user4', email: 'user4@example.com' },
-    { id: 5, username: 'user5', email: 'user5@example.com' }
-];
+  const [data,setData]=useState()
+
+  useEffect(()=>{
+    fetchusers()
+  },[])
+
+  const fetchusers=()=>{
+    axios.get("http://localhost:3001/viewallusers").then((responce)=>{
+      if(responce.data.success)
+      setData(responce.data.data)
+    })
+  }
 
   return (
     <div>
       <h1>User Accounts List</h1>
-      <UserTableList users={users} />
+      {data &&<UserTableList users={data} />}
     </div>
   )
 }

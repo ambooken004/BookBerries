@@ -19,7 +19,7 @@ const BookCard = ({ book }) => {
         <img src={book.bookimage} alt='Harry Potter' className='img'></img>
         <p>Author: {book.bookauthor}</p>
         <p>Price: {book.bookprice}</p>
-        <p>Review:Not is Review</p>
+        <p>Publisher:{book.bookpublisher}</p>
       </div>
       <div className="book-buttons">
         <button className="review-button" onClick={()=>checkloggined(book._id)}>Review Button</button>
