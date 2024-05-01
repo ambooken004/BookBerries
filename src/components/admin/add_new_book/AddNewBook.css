@@ -1,0 +1,54 @@
+.addbook-main-container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addbook-sub-container
+{
+    display:flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 410px;
+    background-color: rgb(159, 122, 246);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness();
+    color:black
+}
+
+input{
+    width: 230px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1.3px solid rgb(69, 67, 67);
+    font-family: poppins;
+    padding: 10px;
+  }
+
+.addbook-sub-container h3
+{
+    font-size:35px;
+    margin-bottom: 50px;
+    font-style: normal;
+}
+
+.addbook-submit-button
+{
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    background: rgb(199,241,246);
+    background-color: purple;
+    color: white;
+    border:1px solid black;
+    font-family: "poppins";
+    font-weight: bold;
+}
+
