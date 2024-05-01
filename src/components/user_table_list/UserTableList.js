@@ -8,15 +8,17 @@ const UserTableList = ({ users }) => {
             <Table>
                 <TableHead>
                     <TableRow>
+                    <TableCell>User Auto Id</TableCell>
                         <TableCell>Username</TableCell>
                         <TableCell>Email</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {users.map(user => (
-                        <TableRow key={user.id}>
+                        <TableRow key={user._id}>
+                            <TableCell>{user._id}</TableCell>
                             <TableCell>{user.username}</TableCell>
-                            <TableCell>{user.email}</TableCell>
+                            <TableCell>{user.useremail}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
