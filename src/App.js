@@ -14,6 +14,7 @@ import AdminPage from './components/admin/Pages/AdminPage.jsx';
 import AdminReview from './components/admin/adminReview/AdminReview.jsx';
 import UserAccounts from './components/admin/user_accounts/UserAccounts.jsx';
 import AddNewBook from './components/admin/add_new_book/AddNewBook.jsx';
+import OrdersPage from './components/admin/orders/OrdersPage.jsx';
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
       <Route path="/adminreview/:id" element={<AdminReview />}></Route>
       <Route path='/admin/useraccounts' element={<UserAccounts />}></Route>
       <Route path='/admin/addnewbook' element={<AddNewBook />}></Route>
+      <Route path='/admin/orders' element={<OrdersPage />}></Route>
+
       
     </Routes>
     </BrowserRouter>

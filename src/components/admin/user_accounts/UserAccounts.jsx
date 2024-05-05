@@ -20,7 +20,7 @@ const UserAccounts = () => {
 
   return (
     <div>
-      <h1>User Accounts List</h1>
+      <h1 style={{color: 'white', backgroundColor: 'purple', marginTop: 0, padding: 15}}>User Accounts List</h1>
       {data &&<UserTableList users={data} />}
     </div>
   )

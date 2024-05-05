@@ -36,14 +36,14 @@ const BookzPage = () => {
 
   return (
     <div className={styles.booksPage}>
-      <h1>Books</h1>
+      <h1 style={{color: 'white', backgroundColor: 'purple', marginTop: 0, padding: 15}}>Books</h1>
       <div className="booksContainer">
         {bookdata && bookdata.map((item,key)=>{
           return(
             <div className="booksdivadmin" key={key}>
           <img src={item.bookimage} alt="" onClick={()=>history(`/adminreview/${item._id}`)}/>
           <h2>{item.bookname}</h2>
-          <button className='admin-book-delete-btn' onClick={()=>deletebook(item.id)}>Delete</button>
+          <button className='admin-book-delete-btn' onClick={()=>deletebook(item._id)}>Delete</button>
         </div>
           )
         })}
