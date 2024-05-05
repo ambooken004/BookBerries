@@ -1,34 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BookTable from '../book_table/BookTable';
+import axios from 'axios';
 
 const OrdersPage = () => {
+
+  useEffect(()=>{
+  fetchallOrders()
+  },[])
   
-  const books = [
-    {
-      id: 1,
-      name: 'Harry Potter',
-      image: 'https://www.shutterstock.com/image-photo/bangkok-thailand-july-16-2019-260nw-1454161316.jpg',
-      quantity: 3
-    },
-    {
-      id: 2,
-      name: 'Mr.Bean',
-      image: 'https://m.media-amazon.com/images/I/51a1NUTf5CL._AC_UF1000,1000_QL80_.jpg',
-      quantity: 2
-    },
-    {
-        id: 3,
-        name: 'Avengers',
-        image: 'https://m.media-amazon.com/images/I/51FEC+OCLZL.jpg',
-        quantity: 5
-      },
-    
-  ];
+  const [orderdata,SetOrderdata]=useState()
+
+  const fetchallOrders=()=>{
+    axios.post("http://localhost:3001/vieworders").then((response)=>{
+      if(response.data.success)
+      SetOrderdata(response.data.data)
+    })
+  }
 
   return (
     <div>
       <h2 style={{color: 'white', backgroundColor: 'purple', marginTop: 0, padding: 15}}>Order Details</h2>
-      <BookTable books={books} />
+      {orderdata && <BookTable books={orderdata}/>}
     </div>
   );
 };
