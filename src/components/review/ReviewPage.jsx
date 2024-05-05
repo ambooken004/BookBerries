@@ -14,9 +14,11 @@ const ReviewPage = () => {
   const [reviewdata, setReviewdata] = useState([]);
   const [bookid,setBookid]=useState()
   const [trigger,setTrigger]=useState()
+  const [bookname,setBookname]=useState()
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const bookid = urlParams.get('bookid');
+    setBookname(urlParams.get("bookname"))
     fetchdata(bookid);
   }, [trigger]);
 
@@ -54,7 +56,7 @@ const ReviewPage = () => {
 
   return (
     <div className="book-review-page">
-      <h1 style={{color: 'black'}}>Book Reviews</h1>
+      {bookname &&<h1 style={{color: 'black'}}> Reviews of book {bookname}</h1>}
       <div className="review-form">
         <textarea placeholder="Write your review..." rows="4" cols="50" onChange={addReviewtoBackend} name="bookreview" />
         <button onClick={uploadData}>Submit</button>

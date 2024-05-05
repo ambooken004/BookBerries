@@ -7,17 +7,17 @@ const BookTable = ({ books }) => {
         <Table>
       <TableHead>
         <TableRow>
-          <TableCell>Book Name</TableCell>
+          <TableCell></TableCell>
           <TableCell>Image</TableCell>
           <TableCell>Quantity</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
         {books.map(book => (
-          <TableRow key={book.id}>
-            <TableCell>{book.name}</TableCell>
-            <TableCell><img src={book.image} alt={book.name} style={{ width: '80px', height: '80px' }} /></TableCell>
-            <TableCell>{book.quantity}</TableCell>
+          <TableRow key={book.bookid.id}>
+            <TableCell>{book.bookid.bookname}</TableCell>
+            <TableCell><img src={book.bookid.bookimage} alt={book.name} style={{ width: '80px', height: '80px' }} /></TableCell>
+            <TableCell>{book.ordercount}</TableCell>
           </TableRow>
         ))}
       </TableBody>
