@@ -16,7 +16,7 @@ const ReviewPage = () => {
   const [trigger,setTrigger]=useState()
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    const bookid = urlParams.get('hostelid');
+    const bookid = urlParams.get('bookid');
     fetchdata(bookid);
   }, [trigger]);
 
@@ -54,7 +54,7 @@ const ReviewPage = () => {
 
   return (
     <div className="book-review-page">
-      <h1>Book Reviews</h1>
+      <h1 style={{color: 'black'}}>Book Reviews</h1>
       <div className="review-form">
         <textarea placeholder="Write your review..." rows="4" cols="50" onChange={addReviewtoBackend} name="bookreview" />
         <button onClick={uploadData}>Submit</button>

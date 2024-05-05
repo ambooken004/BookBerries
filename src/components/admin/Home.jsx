@@ -66,14 +66,20 @@ function Home() {
             <div className='card-inner'>
                 <h3>Books</h3>
             </div>
-            {/* <h1>300</h1> */}
+            
         </button>
 
         <button  onClick ={()=>navigate("/admin/useraccounts")} className='card'>
             <div className='card-inner'>
                 <h3>User Accounts</h3>
             </div>
-            {/* <h1>300</h1> */}
+            
+        </button>
+
+        <button  onClick ={()=>navigate("/admin/orders")} className='card'>
+            <div className='card-inner'>
+                <h3>Orders</h3>
+            </div>
         </button> 
         
         {/* <div className='card'>

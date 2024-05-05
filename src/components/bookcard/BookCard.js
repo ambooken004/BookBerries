@@ -7,7 +7,7 @@ const BookCard = ({ book }) => {
   const checkloggined=(bookid)=>{
     const user=localStorage.getItem("user")
     if(user)
-    history(`/review?hostelid=${bookid}`)
+    history(`/review?bookid=${bookid}`)
     else
     alert("You Must Login First")
   }
@@ -23,7 +23,7 @@ const BookCard = ({ book }) => {
       </div>
       <div className="book-buttons">
         <button className="review-button" onClick={()=>checkloggined(book._id)}>Review Button</button>
-        <button className="price-button">Buy</button>
+        <button className="price-button">Order</button>
       </div>
     </div>
   );
