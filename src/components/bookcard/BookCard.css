@@ -6,16 +6,30 @@
     padding: 10px;
     -webkit-box-shadow: 10px 10px 16px -4px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 16px -4px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 16px -4px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 16px -4px rgba(0,0,0,0.75)
+  }
+
+  .imgbk{
+    width: 250px;
+    height: 200px;
+  }
+
+  .book-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .book-details p{
     color: black;
+    margin: 5px;
   }
   
-  .book-details h2 {
+  .book-details h3 {
     color: black;
     margin-top: 0;
+    text-align: center;
   }
   
   .book-buttons {
@@ -25,7 +39,7 @@ box-shadow: 10px 10px 16px -4px rgba(0,0,0,0.75);
   }
   
   .book-buttons button {
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: none;
     border-radius: 10px;
     margin: 5px;
@@ -38,10 +52,6 @@ box-shadow: 10px 10px 16px -4px rgba(0,0,0,0.75);
   
   .book-buttons button:hover {
     background-color: blue;
-  }
-  .img
-  {
-    height: 55vh;
   }
   .review-btn
   {

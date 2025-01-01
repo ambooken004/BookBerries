@@ -2,33 +2,23 @@ import React from "react";
 import "./LandingPage.css";
 import Navbar from "../navbar/Navbar";
 import Footer from '../footer/Footer';
+import { useNavigate } from "react-router-dom";
 
 
 const LandingPage = () => {
-  
+  const router=useNavigate()
 
   return (
     <div>
       <Navbar />
-      {/*
-      <div className="landingpage-main-container">
-        <h1>BookBerries</h1>
-        <p>
-          Find & Buy Books Online at low prices.Wide range of books available
-        </p>
-        <div className="startlearn-btns-container">
-          <button className="get-started-btn">Get Started</button>
-          <button className="learn-more-btn">Learn More</button>
-        </div>
-        { <Cards cards_content = {cards_content}  /> }
-      </div>*/}
       <div className="landing-page">
       <header>
         <h1>Welcome to <h1 style={{color: "purple"}}>BookBerries</h1></h1>
-        <p>Your one-stop destination for books</p>
+        <p>Your one-stop destination for helping your mind</p>
       </header>
+      <button className="startrecordbutton" onClick={()=>localStorage.getItem("user") ? router("/recording") : alert("You need to login first")}>Start Recording Voice</button>
       <section className="featured-books">
-        <h2>Featured Books</h2>
+        <h2>Featured Books helps</h2>
         <div className="book-container">
           <div className="book">
             <img src="https://m.media-amazon.com/images/I/618XGVFYlwL._SY466_.jpg" alt="How to win friends and influence people" />

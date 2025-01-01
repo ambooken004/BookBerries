@@ -5,19 +5,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: black;
 }
 .login-form-container{
   display:flex;
   justify-content: center;
   align-items: center;
+  gap:10px;
   flex-direction: column;
   width: 500px;
   height: 300px;
-  background-color: rgb(159, 122, 246);
+  background-color: rgb(228, 251, 254);
   background-size: cover;
   background-repeat: no-repeat;
   filter: brightness();
-  color:black
+  color:black;
+  border-radius: 10px;
 }
 
 .login-form-container img{
@@ -75,3 +78,14 @@ font-weight: bold;
 .login-form p{
   font-size: small;
 }
+
+.submit-button{
+  width:200px;
+  padding:10px;
+  border-radius:10px;
+  background:rgb(220, 202, 245);
+  margin-top:30px;
+}
+
+
+

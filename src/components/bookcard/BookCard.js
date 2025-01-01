@@ -30,8 +30,8 @@ const BookCard = ({ book }) => {
   return (
     <div className="book-card">
       <div className="book-details">
-        <h2>{book.bookname}</h2>
-        <img src={book.bookimage} alt='Harry Potter' className='img'></img>
+        <h3>{book.bookname}</h3>
+        <img src={book.bookimage} alt='Harry Potter' className='imgbk'></img>
         <p>Author: {book.bookauthor}</p>
         <p>Price: {book.bookprice}</p>
         <p>Publisher:{book.bookpublisher}</p>

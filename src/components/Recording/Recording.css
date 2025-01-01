@@ -1,0 +1,106 @@
+.recordbg{
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recordh1{
+    color:purple;
+}
+
+.recordbutton{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background: black;
+    color:white;
+}
+
+.recordbuttonstop{
+    background: red;
+}
+
+.recordbuttonwrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recordbuttonwrapper > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recordimgText{
+    font-size: 15px;
+    font-style: italic;
+    color: red;
+}
+
+.recordedaudio{
+  color:black;
+  font-weight: 300;
+  margin-top: 100px;
+}
+
+.audiowrapp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadButton{
+    width: 200px;
+    padding: 5px;
+    background: rgb(2, 2, 64);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    height: 50px;
+}
+
+.upload{
+   width: 100%; 
+}
+
+.upload > h3{
+    text-align: center;
+    color:black;
+    font-weight: 300;
+}
+
+.audioinput{
+    padding: 10px;
+    width: 400px;
+    height: 25px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.uploadtext{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.reportButton{
+    width:200px;
+    height: 50px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(36, 204, 234) 0%, rgb(150, 150, 251) 35%, rgb(2, 111, 133) 100%);
+    border: none;
+    border-radius: 10px;
+    color:white;
+    margin-top:30px;
+}

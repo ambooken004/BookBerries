@@ -1,6 +1,9 @@
 .modify-navbar {
     background-color: rgb(12, 12, 12);
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .modify-navbar-list {
