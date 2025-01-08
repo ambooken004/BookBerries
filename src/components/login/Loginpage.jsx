@@ -27,8 +27,10 @@ const Loginpage = () => {
 
   return (
     <div className='loginwrap'>
-    <div className="login-form-container">
-        <h3>Login Page</h3>
+    <div className='logcover'>
+      <div className='logcover1'></div>
+      <div className="login-form-container">
+        <h3 className='logh3'>Login Page</h3>
         <input
           type="text"
           id="username"
@@ -46,7 +48,8 @@ const Loginpage = () => {
           onChange={handle}
         />
         <button onClick={senddatatobackend} type="submit" className="submit-button">Login</button>
-        <p onClick={()=>history("/signup")}>New user Register now</p>
+        <p className='phj' onClick={()=>history("/signup")}>New user Register now</p>
+    </div>
     </div>
     </div>
   );

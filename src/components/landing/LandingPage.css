@@ -108,5 +108,26 @@ box-shadow: 10px 10px 16px -4px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 7px -7px rgba(0,0,0,0.75);
   }
 
+  .dashboardimg{
+    width: 100%;
+    height: 90vh;
+    background-image: url("https://img.freepik.com/premium-vector/couple-listening-romantic-podcast-illustration-concept-flat-illustration-isolated-white-background_701961-332.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .welcome{
+    font-size: 30px;
+    font-family: "DM Sans";
+    color: rgb(20, 5, 67);
+  }
+
+  .Depreso{
+    margin-top: 400px;
+    font-size: 70px;
+    color: purple;
+    font-family: "Cabin";
+  }
+
 
 

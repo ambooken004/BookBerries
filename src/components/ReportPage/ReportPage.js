@@ -17,6 +17,12 @@ function ReportPage() {
         specilization:"Mentalist",
         hospitalAddress:"Modern Hospital Kodungallur, Thrissur Pin:680686",
         contactNo:"7025059878"  
+    },
+    {
+      name:"Alfrin",
+      specilization:"Mentalist",
+      hospitalAddress:"Modern Hospital Kodungallur, Thrissur Pin:680686",
+      contactNo:"7025059878"  
     }
   ]
   const [books,setBooks]=useState([]);
