@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className='navdivwrapper'>
       <ul className="navbar-list">
-        <li className='navbar-item'><h1 style={{color: 'whitesmoke'}}><a href='/' style={{textDecoration: 'none'}}>BookBerries</a></h1></li>
+        <li className='navbar-item'><h1 style={{color: 'whitesmoke'}}><a href='/' style={{textDecoration: 'none'}}>Depresso Detect</a></h1></li>
         <li className="navbar-item"><a href="/" className="navbar-link-items">Home</a></li>
         <li className="navbar-item"><a href="/books" className="navbar-link-items">Books</a></li>
         <li className="navbar-item"><a href="/about" className="navbar-link-items">About</a></li>
